@@ -1,47 +1,57 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rules - Kindred Yet Unusual</title>
     <style>
       body {
         background-color: #0a0a0a;
         color: #e5e5e5;
       }
+
       .container {
-         text-align: center;
-       }
-      .container pre {
-        display: inline-block;
-        text-align: left;
-       }
+        text-align: center;
+      }
+
       pre {
         white-space: pre-wrap;
         word-wrap: break-word;
         text-align: justify;
-      };
-      @media screen and (max-width: 766px){    
-          .screen-not-good {
-            display: block;
-          }
-          pre {
-            display: none;
-          }
       }
-      @media screen and (min-width: 767px){    
-          .screen-not-good { 
-            display: none;
-          }
-          pre {
-            display: block;
-          }
+
+      .screen-not-good {
+        display: block;
+      }
+
+      .screen-is-good {
+        display: none;
+      }
+
+      @media screen and (min-width: 675px) {
+        .screen-not-good {
+          display: none;
+        }
+
+        .container pre {
+          display: inline-block;
+          text-align: left;
+        }
       }
     </style>
   </head>
 <body>
   <div class="container">
-    <pre>
+    <div class="screen-not-good">
+      <h1>Kindred Yet Unusual</h1>
+      <h2>Informations</h2>
+      <p>The screen dimensions make the « pre » text illegible and unviewable. <br> So make sure you come with a minimum tablet screen (675px).</p>
+      <p>Les dimensions de l'écran rendent le texte « pre » illisible et impossible à lire. <br> Veillez donc à vous munir d'un écran de tablette au minimum (675px).</p>
+    </div>
+    <pre class="screen-is-good">
     ╔══════════════════════════════════════════════════════════════════════════════════════╗
-    ║                                   Rules / Règles                                     ║
     ║                                 Kindred Yet Unusual                                  ║
+    ║                                   Rules / Règles                                     ║
     ╚══════════════════════════════════════════════════════════════════════════════════════╝
 
       
@@ -189,10 +199,6 @@
     │ ambiance positive et solidaire pour tous.                                            │
     ╚══════════════════════════════════════════════════════════════════════════════════════╝
     </pre>
-    <div class="screen-not-good">
-      <p>The screen dimensions make the « pre » text illegible and unviewable, so make sure you come with a minimum tablet screen (768px).</p>
-      <p>Les dimensions de l'écran rendent le texte « pre » illisible et impossible à lire. Veillez donc à vous munir d'un écran de tablette au minimum (768px).</p>
-    </div>
   </div>
 </body>
 </html>

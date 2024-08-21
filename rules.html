@@ -13,6 +13,27 @@
         display: inline-block;
         text-align: left;
        }
+      pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        text-align: justify;
+      };
+      @media screen and (max-width: 766px){    
+          .screen-not-good {
+            display: none;
+          }
+          pre {
+            display: block;
+          }
+      }
+      @media screen and (min-width: 767px){    
+          .screen-not-good { 
+            display: block;
+          }
+          pre {
+            display: none;
+          }
+      }
     </style>
   </head>
 <body>
@@ -168,6 +189,10 @@
     │ ambiance positive et solidaire pour tous.                                            │
     ╚══════════════════════════════════════════════════════════════════════════════════════╝
     </pre>
+    <div class="screen-not-good">
+      <p>The screen dimensions make the « pre » text illegible and unviewable, so make sure you come with a minimum tablet screen (768px).</p>
+      <p>Les dimensions de l'écran rendent le texte « pre » illisible et impossible à lire. Veillez donc à vous munir d'un écran de tablette au minimum (768px).</p>
+    </div>
   </div>
 </body>
 </html>

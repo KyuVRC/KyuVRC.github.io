@@ -1,0 +1,33 @@
+body {
+  background-color: #0a0a0a;
+  color: #e5e5e5;
+}
+
+.container {
+  text-align: center;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+.screen-not-good {
+  display: block;
+}
+
+.screen-is-good {
+  display: none;
+}
+
+@media screen and (min-width: 675px) {
+  .screen-not-good {
+    display: none;
+  }
+
+  .container pre {
+    display: inline-block;
+    text-align: left;
+  }
+}

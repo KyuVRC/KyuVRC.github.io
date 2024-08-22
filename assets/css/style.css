@@ -1,6 +1,13 @@
+:root {
+  --bg-color: #212121;
+  --color: #ececdf;
+}
+
 body {
-  background-color: #0a0a0a;
-  color: #e5e5e5;
+  background-color: var(--bg-color);
+  color: var(--color);
+  font-weight: lighter;
+  overflow-x: hidden;
 }
 
 .container {
@@ -26,8 +33,34 @@ pre {
     display: none;
   }
 
+  .screen-is-good {
+    display: block;
+  }
+
   .container pre {
     display: inline-block;
     text-align: left;
   }
+}
+
+.pre.a {
+  outline: none;
+  color: var(--color);
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.bolder {
+  font-weight: 1200 !important;
+}
+
+.subtitle {
+  margin-top: -25px !important;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
 }
